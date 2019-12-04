@@ -6,7 +6,8 @@ body {
 
 div.intro {
   color: #145252;
-  padding-bottom: none;
+  padding-bottom: 0rem;
+  padding-top: 6rem;
 }
 
 div.email {
@@ -24,8 +25,11 @@ h2 {
 }
 
 h1 {
-  padding-top: 4rem;
   text-align: center;
+}
+
+div.desc {
+  padding-top: 2rem;
 }
 
 input[type=text] {
@@ -60,6 +64,7 @@ div.row{
 .carousel {
   /* width: 70%; */
   margin: 0 auto;
+  padding-top: 0rem;
   padding-bottom: 1rem;
 }
 
@@ -72,3 +77,31 @@ ul {
 div {
   padding-top: 1rem;
 }
+
+hr {
+width: 60%;
+height: 2px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 5px;
+margin-bottom: 5px;
+border-width: 2px;
+border-color: #145252;
+}
+
+div.card {
+        position: relative;
+        display: inline-block;
+    }
+
+div.card .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+
+div.card:hover .img-top {
+        display: inline;
+    }

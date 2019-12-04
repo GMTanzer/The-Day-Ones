@@ -14,64 +14,119 @@
 
   <body>
 
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" role="navigation">
+      <div clas="navbar-header">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <img src="Images/Logo.png" alt="Logo" width="3.5%" style="padding:4px"> <a class="navbar-brand nav-justified" href="#">VitaME </a>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="navbar-nav navbar-left">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">The App</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Kit Yourself Out <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+        </ul>
+        <form class="form-inline ml-auto" >
+          <input class="form-control ml-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
     <main role="main" class="container">
 
-      <div class="starter-template">
-        <img src="Images/Logo.png" alt="Logo" width="10%">
+      <div class="intro">
+        <h1>VitaME <img src="Images/CrossLogo.png" alt="Logo" width=6%> </h1>
+        <p class="lead">The revolutionary new way to track your vitamin levels.</p>
       </div>
-      <div class="starter-template">
+
+      <hr>
+
+      <div class="desc">
         <h1>Our Products</h1>
         <p class="lead">Our Vitamin Tracker biotechnology is designed by industry professionals just for you! Used in conjunction with the VitaME mobile application, you now have all the information and support needed to start your preventative healthcare journey. What are you waiting for?</p>
       </div>
-      <div class="starter-template">
-        <h1>Vitamin Tracker Clip</h1>
-        <img src="Images/VitaME_2.jpg" alt="Product 1" width="30%">
-        <p>£29.99</p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-          Shop Now!
-        </button>
+
+      <div class="row">
+        <div class="col-sm">
+          <h1>Vitamin Tracker Clip</h1>
+          <img src="Images/VitaME_2.jpg" alt="Product 1" style="padding:20px" width="60%">
+          <p>£29.99</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Shop Now!
+          </button>
+        </div>
+        <div class="col-sm">
+          <h1>Vitamin Tracker Watch Strap</h1>
+          <img src="Images/Product Strap.jpg" alt="Product 2" width="42%">
+          <p>£49.99</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  Shop Now!
+          </button>
+        </div>
       </div>
 
+      <br>
 
-      <div class="starter-template">
-        <h1>Vitamin Tracker Watch Strap</h1>
-        <img src="Images/Product Strap.jpg" alt="Product 2" width="30%">
-        <p>£49.99</p>
-      </div>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Shop Now!
-      </button>
-
-      <div class="starter-template">
-        <h1>Supplements</h1>
-      </div>
+      <h1>Supplements</h1>
 
       <!-- columns -->
       <div class="row">
         <div class="col-sm">
           <h2>Vitamin D</h2>
-          <img src="Images/Vitamin D.jpg" alt="Vitamin D" width="100%">
+          <div class="card">
+            <img src="Images/Vitamin D.jpg" alt="Card Back" width="100%">
+            <img src="Images/Vitamin C.jpg" class="img-top" alt="Card Front" width="100%">
+          </div>
           <p>£13.99 </p>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
             Shop Now!
           </button>
         </div>
         <div class="col-sm">
-          <h3>Calcium</h3>
-          <img src="Images/Calcium.jpg" alt="Calcium" width="100%">
+          <h2>Calcium</h2>
+          <div class="card">
+            <img src="Images/Calcium.jpg" alt="Card Back" width="100%">
+            <img src="Images/Vitamin D.jpg" class="img-top" alt="Card Front" width="100%">
+          </div>
           <p>£9.99 </p>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
             Shop Now!
           </button>
         </div>
         <div class="col-sm">
-          <h4>Vitamin C</h4>
-          <img src="Images/Vitamin C.jpg" alt="Vitamin C" width="100%">
+          <h2>Vitamin C</h2>
+          <div class="card">
+            <img src="Images/Vitamin C.jpg" alt="Card Back" width="100%">
+            <img src="Images/Calcium.jpg" class="img-top" alt="Card Front" width="100%">
+          </div>
           <p>£17.99 </p>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
             Shop Now!
           </button>
         </div>
+      </div>
+
+      <br>
+
+      <div class="email">
+        <p>
+          Enter your email below to join our mailing list and stay up to date with all the latest news.
+        </p>
+        <input type="text" placeholder="Enter email here"/>
+        <input type="submit" value="submit"/>
       </div>
 
     </main><!-- /.container -->
